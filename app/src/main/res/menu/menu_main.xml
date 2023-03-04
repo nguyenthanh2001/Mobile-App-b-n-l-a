@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnquaylai"
+        android:icon="@drawable/backsize"
+        app:showAsAction="always"
+        android:orderInCategory="0"
+        android:layout_gravity="start" />
+    <item
+        android:id="@+id/action_button"
+        android:icon="@drawable/add"
+        android:title="Button"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/btnthem"
+                android:icon="@drawable/add"
+                android:title="Thêm"
+                app:showAsAction="ifRoom">
+            </item>
+            <item
+                android:id="@+id/btnmail"
+                android:icon="@drawable/write"
+                android:title="Lưu file"
+                app:showAsAction="ifRoom">
+            </item>
+        </menu>
+    </item>
+</menu>

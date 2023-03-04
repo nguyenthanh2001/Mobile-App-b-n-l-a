@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitytinhtoan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên người mua"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtennguoimua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#E4EDEC"
+                android:inputType=""
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng khối lượng"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtongkhoiluong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType=""
+                android:drawableRight="@drawable/kgmini"
+                android:backgroundTint="#E4EDEC"
+                android:editable="false"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số bao"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edsobao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType=""
+                android:backgroundTint="#E4EDEC"
+                android:editable="false"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F10000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="8dp"
+                android:text="Trừ tạp chất (nhập xong bấm nút hoàn thành trên bàn phím để tính [ Khối lượng còn lại ]" />
+
+            <EditText
+                android:id="@+id/edtrutapchat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType="numberDecimal"
+                android:drawableRight="@drawable/kgmini"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khối lượng còn lại "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edkhoiluongconlai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType=""
+                android:drawableRight="@drawable/kgmini"
+                android:backgroundTint="#E4EDEC"
+                android:editable="false"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá thu mua"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edgiathumua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType=""
+                android:backgroundTint="#E4EDEC"
+                android:editable="false"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thành tiền"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edthanhtien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType=""
+                android:backgroundTint="#E4EDEC"
+                android:editable="false"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F44336"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="8dp"
+                android:text="Tiền đặt cọc (nhập xong bấm nút hoàn thành trên bàn phím để tính [ Tiền còn lại ]" />
+
+            <EditText
+                android:id="@+id/edtiendatcoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType="numberDecimal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F44336"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="8dp"
+                android:text="Tiền đã trả (nhập xong bấm nút hoàn thành trên bàn phím để tính [ Tiền còn lại ]" />
+
+            <EditText
+                android:id="@+id/edtiendatra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType="numberDecimal"
+                android:text="" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiền còn lại"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#424242"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtienconlai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#212121"
+                android:layout_marginBottom="16dp"
+                android:inputType=""
+                android:editable="false"
+                android:backgroundTint="#E4EDEC"
+                android:text="" />
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="5"
+                android:rowCount="5"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="1"
+                    android:layout_row="2"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="1"
+                    android:layout_row="3"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="2"
+                    android:layout_row="0"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="2"
+                    android:layout_row="1"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="2"
+                    android:layout_row="3"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="2"
+                    android:layout_row="4"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="3"
+                    android:layout_row="0"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="3"
+                    android:layout_row="1"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="3"
+                    android:layout_row="2"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="3"
+                    android:layout_row="3"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="3"
+                    android:layout_row="4"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="4"
+                    android:layout_row="0"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="4"
+                    android:layout_row="1"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="4"
+                    android:layout_row="2"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="4"
+                    android:layout_row="3"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+                <EditText
+                    android:id="@+id/editText25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_column="4"
+                    android:layout_row="4"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_border"
+                    android:layout_margin="1dp"
+                    android:hint="Nhập" />
+            </GridLayout>
+            <TextView
+                android:id="@+id/cclzque"
+                android:layout_width="wrap_content"
+                android:text="Các ô bỏ trống sẽ không tính"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#F44336"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnnhap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Nhập" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

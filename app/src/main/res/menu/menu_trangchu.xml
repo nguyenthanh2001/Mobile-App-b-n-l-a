@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_button"
+        android:icon="@drawable/add"
+        android:title="Button"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/btnthemnhom"
+                android:icon="@drawable/add"
+                android:title="Thêm nhóm"
+                app:showAsAction="ifRoom">
+            </item>
+            <item
+                android:id="@+id/btnmoyoutube"
+                android:icon="@drawable/youtube"
+                android:title="Xem hướng dẫn"
+                app:showAsAction="ifRoom">
+            </item>
+            <item
+                android:id="@+id/btnweb"
+                android:icon="@drawable/lua"
+                android:title="Xem giá thị trường"
+                app:showAsAction="ifRoom">
+            </item>
+        </menu>
+    </item>
+
+</menu>
